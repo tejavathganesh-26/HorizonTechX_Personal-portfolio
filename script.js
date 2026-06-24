@@ -27,7 +27,6 @@ document.getElementById("project-grid").innerHTML = projects.map(p => `
       <div class="card-actions">
         ${p.github?`<a class="btn btn-outline btn-sm" href="${p.github}" target="_blank" rel="noreferrer">🐙 Code</a>`:""}
         ${p.demo?`<a class="btn btn-primary btn-sm" href="${p.demo}" target="_blank" rel="noreferrer">↗ Live Demo</a>`:""}
-        ${!p.github&&!p.demo?`<span class="muted" style="font-size:12px">Links coming soon</span>`:""}
       </div>
     </div>
   </article>
